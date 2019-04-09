@@ -27,6 +27,7 @@ github_username:  yoraplat
 # Build settings
 markdown: kramdown
 remote_theme: pmarsceill/just-the-docs
+
 plugins:
   - jekyll-feed
 
