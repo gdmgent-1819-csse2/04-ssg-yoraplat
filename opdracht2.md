@@ -4,7 +4,9 @@ title: Opdracht 2
 permalink: /opdracht2/
 ---
 
-Preview Code
+### Adding the clock
+
+Use the vectors to create a clock
 ~~~~
 const time = new Date()
 
@@ -21,7 +23,7 @@ const time = new Date()
                 const minutesVector = new Vector2(0, i)
                 minutesVector.rotateVector(time.getMinutes() * -6)
                 this.properties.positions.push(minutesVector.x, minutesVector.y)
-                this.properties.colors.push(...this.colors.white)
+                this.properties.colors.push(this.colors.white)
             }
 
 
@@ -29,7 +31,7 @@ const time = new Date()
                 const hoursVector = new Vector2(0, i)
                 hoursVector.rotateVector((time.getHours() * -30) - time.getMinutes()/2)
                 this.properties.positions.push(hoursVector.x, hoursVector.y)
-                this.properties.colors.push(...this.colors.white)
+                this.properties.colors.push(this.colors.white)
             }
         }
 
