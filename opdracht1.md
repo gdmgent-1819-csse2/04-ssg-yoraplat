@@ -3,9 +3,31 @@ layout: page
 title: Opdracht 1
 permalink: /opdracht1/
 ---
+# Vector classes
 
-### Documentatie voor opdracht 1
-Vector classes testen
+To create vectors you have to import them from the library.
+Then declare a new constant as the vector you want to use.
+
+~~~~
+const v1 = new Vector2(10, 41);
+const v2 = new Vector2(14, 40);
+~~~~
+
+To use the different functions you wrote:
+
+~~~~
+v1.add(v2)
+~~~~
+This will add your two vectors together. To subtract two vectors use:
+~~~~
+v1.sub(v2)
+~~~~
+
+To see the result of the calculations, simply use console.log() to log the results.
+~~~~
+console.log(v1.add(v2));
+console.log(v1.sub(v2));
+~~~~
 
 ~~~~
 constructor() {
